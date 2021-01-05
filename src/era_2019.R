@@ -11,5 +11,9 @@ for (i in c(1:30)){
 }
 
 png(file = "PICTURE/2019.png")
-plot(era_2019, wins_2019)
+plot(era_2019, wins_2019,
+     main="W-ERA 2019",
+     ylab = "W",
+     xlab = "ERA"
+     )
 dev.off()

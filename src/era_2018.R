@@ -10,7 +10,10 @@ for (i in c(1:30)){
     era_2018  <- c(era_2018,source_data_2018[i,4])
 }
 
-
 png(file = "PICTURE/2018.png")
-plot(era_2018, wins_2018)
+plot(era_2018, wins_2018,
+     main="W-ERA 2018",
+     ylab = "W",
+     xlab = "ERA"
+     )
 dev.off()
